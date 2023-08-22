@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="icon" href="logo.png" type="image/x-icon"/>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
+    <title>Contact Us</title>
+    <style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+       body{
+        width: 100%;
+        margin: 0px;
+        background-color: beige;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    
+      }
+      header{
+        background-color: rgba(46, 82, 67, 0.868);
+        width: 100%;
+        height: 100px;
+        position: relative;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+      .logo img {
+        width: 100px; 
+        height: auto;
+      }
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+      .nav-links li a:hover {
+        color: #ff9800; 
+      }
+      .logo{
+        padding-left: 25px;
+      }
+      .nav-links {
+        flex: 1;
+        text-align: left;
+        color: rgb(101, 97, 97);
+        display: flex;
+      }
+      .nav-links ul li {
+        display: inline-block;
+        margin: 5px 20px; 
+        padding-right: 30px;
+    
+      }
+      .nav-links ul li a {
+        text-decoration: none;
+        color: beige;
+        font-size: large;
+        font-weight: bolder;
+        font-family: 'Times New Roman', Times, serif;
+        transition: color 0.3s;
+      }
+      .nav-links ul li a::after{
+        content: '';
+        display: block;
+        margin: auto;
+        height: 3px;
+        width: 0%;
+        background-color: #cb8450;
+        transition: .6s;
+      }
+      .nav-links ul li a:hover:after {
+        width: 100%;
+      }
+      .nav-links ul img{
+        width: 20px;
+        padding-right: 30px;
+      }
+      .container{
+        margin-top: 100px;
+        bottom: 0px;
+        border: 20px 20px #b4c2be;
+      }
+      .row{
+        gap: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        border: 20px 20px #b4c2be;
+      } 
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        position:relative;
+        bottom: -31px;
+        width: 100%;
+      }
+      .footer-content p {
+        font-size: 14px;
+      }
+      .container h2{
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bolder;
+      }
+      .contact-form input{
+        padding: 10px;
+        border-radius: 4px;
+        box-shadow: 0 0 10px #4b4949;
+      }
+      .contact-form textarea{
+        padding: 10px;
+        border-radius: 4px;
+        box-shadow: 0 0 10px #4b4949;
+      }
+      .contact-form button{
+        padding: 10px;
+        border-radius: 4px;
+        box-shadow: 0 0 10px #4b4949;
+      }
+      button{
+        color: aliceblue;
+        background-color: rgb(72, 97, 89);
+      }
+      button:hover{
+        color: #cb8450;
+      }
+      
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+      <img src="logo.png"  style="width: 100px; height: 100px;"
+       alt="logo"/> 
+       </div>
+        <nav>
+            <div class="nav-links" id="navlinks">
+                <!-- <i class="fa-solid fa-xmark" onclick="hideMenu()"></i> -->
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/Activity/MINI%20PROJECT%201/Home.html"target="_blank">Home</a></li>
+                    <li><a href="http://127.0.0.1:5500/Activity/MINI%20PROJECT%201/About.html" target="_blank">About </a></li>
+                    <li><a href="http://127.0.0.1:5500/Activity/MINI%20PROJECT%201/Gallery.html" target="_blank">Gallery</a></li>
+                    <li><a href="http://127.0.0.1:5500/Activity/MINI%20PROJECT%201/Contacts.html" target="_blank">Contacts</a></li>
+                </ul>
+            </div>
+        </nav> 
+    </header>
+    <main>
+        <div class="container">
+            <div class="row align-items-start">
+              <div class="col">
+                <h2>"Wanderlust Gateway: Embark on Your Journey"</h2> 
+                <p>Feel free to reach out to us if you have any questions, suggestions, or inquiries. We value your feedback and are always here to assist you. Whether you're looking for more information about our services, want to collaborate, or simply want to say hello, we'd love to hear from you.</p>
+    
+                <p>Our dedicated team is ready to provide you with prompt and friendly support. Use the contact form below to send us a message, and we'll get back to you as soon as possible.</p>
+                    
+                <p>We appreciate your interest and look forward to connecting with you!</p>
+                    
+                <h2>Contact Us Here:</h2>
+                <p><strong>Email:</strong> maryjoyavila524@gmail.com</p>
+                <p><strong>Phone:</strong> +639951956963</p>
+                <p><strong>Address:</strong> Dasmarinas Cavite, Philippines</p>
+              </div>
+              <div class="col">
+                <h2>"Whispers in the Wind: Where Your Thoughts Find Voice."</h2> 
+                <form class="contact-form" action="submit_contact_form.php" method="POST"> 
+                    <p><label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    </p>
+                    <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    </p>
+                    <p>
+                    <button type="submit">Submit</button>
+                    </p>
+                </form>
+              </div>
+            </div>
+          </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+        <p style="font-family: Georgia, 'Times New Roman', Times, serif; color: #ffffff;">&copy; TropicalHavenQuests.Ph 2023 | All rights reserved.</p>
+        </div>
+    </footer>
+  <script>
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navlinks.style.right = "0";
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

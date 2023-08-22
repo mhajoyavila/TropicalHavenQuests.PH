@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"/>
+    <link rel="icon" href="logo.png" type="image/x-icon"/>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
+    <title>TropicalHavenQuests.ph/About</title>
+    <style>
+      *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        width: 100%;
+        background-color: beige;
+      }
+      header{
+        background-color: rgba(46, 82, 67, 0.868);
+        width: 100%;
+        height: 100px;
+        position: relative;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+
+      .logo img {
+        width: 100px; 
+        height: auto;
+      }
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+      .nav-links li a {
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        transition: color 0.3s;
+      }
+      .nav-links li a:hover {
+        color: #ff9800; 
+      }
+      .logo{
+        padding-left: 25px;
+      }
+      .nav-links {
+        flex: 1;
+        text-align: left;
+        color: rgb(101, 97, 97);
+        display: flex;
+      }
+      .nav-links ul li {
+        display: inline-block;
+        margin: 5px 20px; 
+        padding-right: 30px;
+    
+      }
+      .nav-links ul li a {
+        color: beige;
+        font-size: large;
+        font-weight: bolder;
+      }
+      .nav-links ul li a::after{
+        content: '';
+        display: block;
+        margin: auto;
+        height: 3px;
+        width: 0%;
+        background-color: #cb8450;
+        transition: .6s;
+      }
+      .nav-links ul li a:hover:after {
+        width: 100%;
+      }
+
+      .nav-links ul img{
+        width: 20px;
+        padding-right: 30px;
+      }
+      footer {
+        position: flex;
+        background-color: #555;
+        height: 150px;
+        width: 100%;
+        padding-bottom: 30px;
+        margin-top:0px;
+        margin-bottom: -10px;
+      }
+      .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+      .footer-content h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 2.5rem;
+      }
+      .footer-content p {
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 15px;
+        font-size: 14px;
+      }
+      .socials {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .socials li {
+        margin: 0 10px;
+      }
+      .socials a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+        
+      }
+      .socials a i {
+        font-size: 1.1rem;
+        transition: background-color 0.3s;
+        transition: color 0.4 ease;
+      }
+
+      .socials a:hover  {
+        background: #555;
+        color: #d3891aab;
+        border-color: #fff;
+        box-shadow: 0 0 10px #fff;
+      }
+      .container{
+        margin-top: 100px;
+    }
+    .row{
+        gap: 100px;
+        }
+    h3{
+        text-align: center;
+         padding-top: 30px;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+    <img src="logo.png"  style="width: 100px; height: 100px;"
+     alt="logo"/> 
+     </div>
+      <nav>
+          <div class="nav-links" id="navlinks">
+              <!-- <i class="fa-solid fa-xmark" onclick="hideMenu()"></i> -->
+              <ul>
+                  <li><a href="http://127.0.0.1:5500/Activity/MINI%20PROJECT%201/Home.html"target="_blank">Home</a></li>
+                  <li><a href="http://127.0.0.1:5500/Activity/MINI%20PROJECT%201/About.html" target="_blank">About </a></li>
+                  <li><a href="http://127.0.0.1:5500/Activity/MINI%20PROJECT%201/Gallery.html" target="_blank">Gallery</a></li>
+                  <li><a href="http://127.0.0.1:5500/Activity/MINI%20PROJECT%201/Contacts.html" target="_blank">Contacts</a></li>
+              </ul>
+          </div>
+      </nav> 
+  </header>
+      <main>
+       <h1 style="padding-top: 100px; text-align: center; font-style: italic; font-family: 'Times New Roman', Times, serif; font-weight: bolder;">Discover Our Story</h1>
+        <div class="container justify-content">
+          <div class="row align-items-start">
+            <div class="col">
+                  <p><strong>Website Overview:</strong> TropicalHavenQuests.PH is a comprehensive online platform dedicated to promoting and providing detailed information about an exquisite travel destination - a breathtaking coastal paradise that promises unforgettable experiences to travelers of all kinds.</p> 
+                  <p>This website serves as a one-stop resource for individuals seeking inspiration, planning assistance, and an immersive virtual tour of this idyllic coastal haven.</p>
+                  <p>    </p>
+                  <p>In summary, TropicalHavenQuests.PH serves as a captivating and informative platform designed to inspire, inform, and assist travelers in exploring, planning, and experiencing the wonders of a stunning tropical paradise. It brings the destination to life through rich multimedia content, practical resources, and a sense of community, catering to a diverse range of travelers seeking memorable and meaningful experiences.</p>
+                  <p><strong>Website Purpose:</strong> The primary purpose of TropicalHavenQuests.PH is to captivate, inform, and assist potential travelers in exploring and planning their visit to this mesmerizing coastal destination.</p> 
+                  <p>    
+                  The website aims to fulfill the following purposes:</p>
+                  <p>
+                      <strong>Virtual Tours:</strong> Through interactive 360-degree virtual tours and immersive videos, visitors can virtually explore key destinations, landmarks, and experiences within the coastal paradise. This feature allows potential travelers to familiarize themselves with the destination's ambiance and attractions before embarking on their actual journey.</p>
+                      <p>
+                        <strong>Community and Engagement:</strong> TropicalHavenQuests.PH fosters a sense of community among travelers. The website features a blog with personal travel stories, insights from local experts, and tips from fellow travelers.</p>
+            </div>
+            <div class="col">
+              
+                <p>
+                    Additionally, a user-friendly comment section and social media integration encourage visitors to share their thoughts, questions, and experiences, creating an engaged and supportive online travel community.</p>
+                <p>
+                    <strong>Inspiration and Dreaming:</strong> The website seeks to ignite wanderlust and inspire visitors with stunning imagery, captivating descriptions, and immersive videos that showcase the natural beauty, cultural heritage, and unique attractions of the tropical paradise. By offering a virtual escape, the website encourages visitors to dream about and envision their upcoming journey.</p>
+                <p>
+                    <strong>Destination Information:</strong> TropicalHavenQuests.PH provides in-depth and accurate information about the destination's geography, climate, local customs, traditions, and lifestyle. Detailed guides highlight must-visit locations, hidden gems, and a variety of outdoor and cultural activities, catering to travelers seeking adventure, relaxation, or cultural enrichment.</p>
+                    <p><strong>Adventure Enthusiasts:</strong> These travelers are looking for thrilling and exciting experiences such as hiking, trekking, water sports, and other adrenaline-pumping activities. They are interested in destinations that offer unique adventure opportunities.
+    
+                      <p><strong> Vacation Planners:</strong> Families with children often look for destinations that provide family-friendly activities, accommodations, and amenities. This could include theme parks, educational attractions, and safe and comfortable lodging options.</p>
+                          
+                      <p><strong>Couples and Honeymooners:</strong> People in romantic relationships or newlyweds are interested in destinations that offer romantic settings, picturesque landscapes, and intimate activities.</p>
+                          
+                    
+                                        
+            </div>
+            <div class="col"> 
+             
+              
+                <p><strong>Cultural Explorers:</strong> Travelers who are passionate about experiencing different cultures, traditions, and local lifestyles. They seek destinations with rich history, museums, art galleries, festivals, and unique local cuisine.</p>    
+                <p><strong>Budget Travelers:</strong> Individuals or groups looking for affordable travel options, including budget accommodations, inexpensive attractions, and money-saving tips.</p>    
+    
+                <p><strong>Luxury Travelers:</strong> High-end travelers who are willing to pay a premium for luxury accommodations, fine dining, exclusive experiences, and personalized services.</p>      
+    
+                <p><strong>Solo Travelers:</strong> Individuals who prefer to travel alone and are looking for destinations that are safe, solo-friendly, and offer opportunities for socializing and making new friends.</p>
+    
+                <p><strong>Nature and Wildlife Enthusiasts:</strong>Those interested in exploring natural landscapes, national parks, wildlife sanctuaries, and        eco-tourism activities.</p>
+    
+                <p><strong>Photography and Art Lovers:</strong> Travelers who are interested in capturing beautiful landscapes, architecture, and local art scenes through photography or other artistic mediums.</p>
+    
+                <p><strong>Retirees and Senior Travelers:</strong> Older adults who have more time and flexibility to travel. They might be interested in cultural experiences, relaxation, and destinations that offer senior-friendly amenities.</p>
+    
+                <p><strong>Business Travelers:</strong> Individuals who travel for work purposes and are interested in practical information about business-friendly accommodations, conference facilities, and local transportation.</p>
+    
+                <p><strong>Food and Culinary Enthusiasts:</strong> Travelers who are passionate about trying new foods, culinary experiences, and exploring local food scenes.</p>
+              
+            </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-content">
+          <h3></h3>
+          <p style="font-family: Georgia, 'Times New Roman', Times, serif; color: #ffffff;padding-top: 20px;">&copy; TropicalHavenQuests.Ph 2023 | All rights reserved.</p>
+          <ul class="socials">
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100009378730701" target="_blank"><i class="bx bxl-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/mhajoyavila/" target="_blank"><i class="bx bxl-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://www.upwork.com/freelancers/~016906f02a0a6dee24" target="_blank"><i class="bx bxl-upwork"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/mary-joy-avila-85b7a3281/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCB5wBPZ-SzyN90XnwvEg4rg" target="_blank"><i class="bx bxl-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </footer>
+      <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+  </body>
+</html>

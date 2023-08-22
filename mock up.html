@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <link rel="stylesheet" href="styles.css"> -->
+<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"/>
+<title>TropicalHavenQuests.PH</title>
+<style>
+  /* Reset default margin and padding */
+  body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Basic styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+  }
+
+  /* Header */
+  header {
+    background-color: #587e5b;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    height: 150px;
+  }
+
+  .logo {
+    display: flex;
+  }
+  .logo h1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+
+  /* Hero Section */
+  .hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #413c3c;
+  }
+
+  .tagline {
+    font-size: 28px;
+    margin-top: 10px;
+  }
+
+  /* Main Content */
+  .main-content {
+    padding: 2rem;
+  }
+
+  .portfolio-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .portfolio-item img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+  }
+
+  /* Footer */
+  footer {
+    background-color: #646060;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .portfolio-item {
+      grid-template-columns: 1fr;
+    }
+  }
+  img{
+    width: 20px; height: 20px;
+  }
+  footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #555;
+        height: auto;
+        width: 100vw;
+        padding-top: 0;
+        color: white;
+      }
+
+      .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-content h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 2.5rem;
+      }
+
+      .footer-content p {
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+      }
+      .socials {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 3rem 0;
+      }
+
+      .socials li {
+        margin: 0 10px;
+      }
+
+      .socials a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .socials a i {
+        font-size: 1.1rem;
+        transition: background-color 0.3s;
+        transition: color 0.4 ease;
+      }
+
+      .socials a:hover  {
+        background: #555;
+        color: #FFC6AC;
+        border-color: #fff;
+        box-shadow: 0 0 10px #fff;
+      }
+      li {
+        list-style: none;
+      }
+      .nav-links {
+    flex: 1;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    /* font-size: xx-small; */
+}
+.nav-links ul li {
+    display: inline-block;
+    margin: 5px 20px;
+    
+}
+.nav-links ul li a {
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: medium;
+    font-weight: 500;
+}
+.nav-links ul li a::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0%;
+    background-color: #cb8450;
+    transition: .6s;
+}
+.nav-links ul li a:hover:after {
+    width: 100%;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="Vintage_Retro_Outdoor_Adventure_Badge_Logo__2_-removebg-preview.png" 
+      style="width: 100px; height: 100px;" alt="logo"/>
+     <h1>TropicalHavenQuests.Ph</h1>
+     </div>
+    <!-- <nav>
+      <a href="#">Home</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contacts</a>
+      <a href="#">Log In</a>
+      <img src="sidebar.png">
+      <div class="sidebar">
+        <div class="menu-icon">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div> -->
+    <!-- </nav>  -->
+    <nav>
+      <!-- <div class="topnav">
+          <a class="active"href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Gallery</a>
+      </div> -->
+      <div class="nav-links" id="navlinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+              <li><a hrf="#">Home</a></li>
+              <li><a href="#">About </a></li>
+              <li><a href="#" target="_blank">Gallery</a></li>
+              <li><a href="#" target="_blank">Events</a></li>
+              <li><a href="#" target="_blank">Contact</a></li>
+          </ul>
+      </div>
+  </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Welcome to TropicalHavenQuests.ph</h1>
+    <p class="tagline">
+      "Unveil the Wonders: Your Gateway to Enchanting Adventures".</p>
+  </div>
+
+  <!-- <div class="main-content">
+    <h2>Featured Portfolio</h2>
+    <div class="portfolio-item">
+      <img src="portfolio-image1.jpg" alt="Portfolio Image 1">
+      <img src="portfolio-image2.jpg" alt="Portfolio Image 2">
+      <img src="portfolio-image3.jpg" alt="Portfolio Image 3">
+    </div> -->
+
+    <!-- More content sections go here -->
+
+  </div>
+
+ <footer>
+    <div class="footer-content">
+      <h3></h3>
+      <p style="font-family: Georgia, 'Times New Roman', Times, serif;">&copy; MARY JOY AVILA 2023 | All rights reserved.</p>
+      <ul class="socials">
+        <li>
+          <a href="" target="_blank"><i class="bx bxl-facebook"></i></a>
+        </li>
+        <li>
+          <a href="" target="_blank"><i class="bx bxl-instagram"></i></a>
+        </li>
+        <li>
+          <a href="" target="_blank"><i class="bx bxl-twitter"></i></a>
+        </li>
+        <li>
+          <a href="" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="" target="_blank"><i class="bx bxl-youtube"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <!-- <p>  &copy; Copyright Group 4. designed by <span>Group 4</span></p></div> -->
+    </div>
+  </footer>
+</body>
+</html>

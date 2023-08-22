@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@200;300;400;500;600;700&family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <title>Gallery</title>
+    <style>
+      *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        background-color: rgba(239, 239, 204, 0.826);
+      }
+      header{
+        background-color: rgba(46, 82, 67, 0.868);
+        width: 100%;
+        height: 120px;
+        position: fixed;
+      }
+      .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        position: relative;
+        padding: 12px 20px;
+        font-size: larger;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: medium;
+      }
+      .navbar .about {
+        color: #f5f9e1;
+      }
+      .menu {
+        display: flex;
+      }
+      .menu li {
+        padding-left: 30px;
+      }
+      .menu li a {
+        display: inline-block;
+        text-decoration: none;
+        color: #ede4cc;
+        text-align: center;
+        transition: 0.15s ease-in-out;
+        position: relative ;
+      }  
+      .menu li a::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: #da9652;
+        transition: 0.15s ease-in-out;
+      }
+      .menu li a:hover:after {
+        width: 100%;
+      }
+      .open-menu , .close-menu {
+        position: absolute;
+        color: #fff;
+        cursor: pointer;
+        font-size: 2.5rem;
+        display: none;    
+      }
+      .open-menu  {
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+      }
+      .close-menu {
+        top: 20px;
+        right: 20px;
+      }
+      #check {
+        display: none;
+      }
+      .container {
+        position: relative;
+        padding: 100px;
+      }
+      .c-item {
+        height: 480px;
+      }
+      .c-img {
+        height: 100%;
+        object-fit: cover;
+        margin-top: 120px;
+        margin-bottom: 100px;
+        filter: brightness(0.6);
+        display:flex;
+        align-items: center;
+      }
+      footer {
+        background-color: #555;
+        height: 150px;
+        width: 100%;
+      }
+      .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+      .footer-content p {
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+      }
+      .socials {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .socials li {
+        margin: 0 10px;
+      }
+      .socials a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+      }
+      .socials a i {
+        font-size: 1.1rem;
+        transition: background-color 0.3s;
+        transition: color 0.4 ease;
+      }
+      .socials a:hover  {
+        background: #555;
+        color: #d3891aab;
+        border-color: #fff;
+        box-shadow: 0 0 10px #fff;
+      }
+      .video iframe {
+        justify-content: space-between;
+        display: inline-block;
+        border-radius: 10px;
+      }
+      .video{
+        align-items: center;
+        text-align: center;
+        padding-top: 20px;
+      }
+      .featuredphotos ul img{
+        width: 350px;
+        height: 300px;
+        transition:transform 1s;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+      }
+      .featuredphotos ul img:hover{
+      transform: scale(1.2);
+      }
+      .VidImg{
+      margin-top: 0px;
+      margin-bottom:0px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 20px;
+}
+    </style>
+  </head>
+  <body>
+      <header>
+        <nav>
+            <ul class="navbar">
+                <li class="logo">
+                  <img src="logo.png" style="height: 100px; width: 100px;" alt="logo"></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                  <li><a href="http://127.0.0.1:5500/Activity/MINI%20PROJECT%201/Home.html" target="_blank">Home</a></li>
+                  <li><a href="http://127.0.0.1:5500/Activity/MINI%20PROJECT%201/About.html" target="_blank">About </a></li>
+                  <li><a href="http://127.0.0.1:5500/Activity/MINI%20PROJECT%201/Gallery.html" target="_blank">Gallery</a></li>
+                  <li><a href="http://127.0.0.1:5500/Activity/MINI%20PROJECT%201/Contacts.html" target="_blank">Contacts</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <div id="hero-carousel" class="carousel slide" data-bs-slide="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="carouselcover.jpg" class="d-block w-100 c-img" alt="Slide 1" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: #ede4cc;">Discovering serenity amidst the natural wonders!</h5>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="2ndcarousel.jpg" class="d-block w-100 c-img" alt="Slide 2" />
+        </div>
+        <div class="carousel-item c-item">
+          <img src="carouselimg.jpg" class="d-block w-100 c-img" alt="Slide 3" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <section>
+      <div class="VidImg" style="background-color: #55555540;">  
+        <h2 style="padding: 50px; font-family: 'Times New Roman', Times, serif; font-size: bolder;">Let me take you to a virtual tour!</h2>
+      <div class="video">
+          <iframe
+          width="400"
+          height="350"
+          src="https://www.youtube.com/embed/eSUmkFPln_U"
+          frameborder="0" allowfullscreen>
+          </iframe>
+          <iframe 
+          width="400" 
+          height="350"  
+          src="https://www.youtube.com/embed/D2r0DEGr1I4" 
+          frameborder="0" allowfullscreen>
+          </iframe>
+          <iframe
+            width="400"
+            height="350" 
+            src="https://www.youtube.com/embed/bH0_2GsynME" frameborder="0" allowfullscreen>
+          </iframe>
+          <iframe
+          width="400"
+          height="350"
+          src="https://www.youtube.com/embed/Pmf7YVK5Bus"
+          frameborder="0" allowfullscreen>
+          </iframe>
+          <iframe 
+          width="400" 
+          height="350"  
+          src="https://www.youtube.com/embed/xYmKDnLtJH4" 
+          frameborder="0" allowfullscreen>
+          </iframe>
+          <iframe
+            width="400"
+            height="350" 
+            src="https://www.youtube.com/embed/vZ9M1tNrg3I" frameborder="0" allowfullscreen>
+          </iframe>
+          <iframe
+          width="400"
+          height="350"
+          src="https://www.youtube.com/embed/cnoEqq1oC3M"
+          frameborder="0" allowfullscreen>
+          </iframe>
+          <iframe 
+          width="400" 
+          height="350"  
+          src="https://www.youtube.com/embed/jxgPtjd_Ubo" 
+          frameborder="0" allowfullscreen>
+          </iframe>
+          <iframe
+            width="400"
+            height="350" 
+            src="https://www.youtube.com/embed/5myfOaVzKw0" frameborder="0" allowfullscreen>
+          </iframe>
+        </div>
+        <ul class="featuredphotos">
+          <h2 style="padding: 50px;font-family: 'Times New Roman', Times, serif; font-size: bolder;">"Escaping to paradise found at the Philippines."</h2>
+         <ul>
+            <img id="brt" src="brt.jpg" alt="Banaue Rice Terraces"/>
+            <img src="chocolate hills.jpg" alt="Chocolate Hills"/>
+            <img src="beach 1.jpg" alt="Beach"/>
+            <img src="beach 2.jpg" alt="Beach"/>
+            <img src="mountain.jpg" alt="Mountain"/>
+            <img src="Surfing.jpg" alt="Surfing"/>
+            <img src="El Nido, Palawan.jpg" alt="Palawan"/>
+            <img src="Lake inside Taal volcano.jpg" alt="Taal"/>
+            <img src="Mayon volcano.jpg" alt="Mayon"/>
+            <img src="Sunset in Boracay, Philippines.jpg" alt="Boracay"/>
+            <img src="Aklan.jpg" alt="AklanBoracay"/>
+            <img src="Siargao.jpg" alt="Siargao"/>
+        </ul>
+        </div>
+      </div>
+      </section>  
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p style="font-family: Georgia, 'Times New Roman', Times, serif; color: #ffffff;padding-top: 20px;">&copy; TropicalHavenQuests.Ph 2023 | All rights reserved.</p>
+        <ul class="socials">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100009378730701" target="_blank"><i class="bx bxl-facebook"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/mhajoyavila/" target="_blank"><i class="bx bxl-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://www.upwork.com/freelancers/~016906f02a0a6dee24" target="_blank"><i class="bx bxl-upwork"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/mary-joy-avila-85b7a3281/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCB5wBPZ-SzyN90XnwvEg4rg" target="_blank"><i class="bx bxl-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </footer>
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showMenu(){
+          navlinks.style.right = "0";
+      }
+      function hideMenu(){
+          navlinks.style.right = "-200px";
+      }
+  </script>
+  </body>
+</html>

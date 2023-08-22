@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"/>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="icon" href="logo.png" type="image/x-icon"/>
+    <title>TropicalHavenQuests.Ph</title>
+</head>
+<body>
+    <header>
+      <nav>
+      <img src="logo.png"  style="width: 100px; height: 100px;"
+       alt="logo"/> 
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/Activity/MINI%20PROJECT%201/Home.html" target="_blank">Home</a></li>
+                    <li><a href="http://127.0.0.1:5500/Activity/MINI%20PROJECT%201/About.html" target="_blank">About </a></li>
+                    <li><a href="http://127.0.0.1:5500/Activity/MINI%20PROJECT%201/Gallery.html" target="_blank">Gallery</a></li>
+                    <li><a href="http://127.0.0.1:5500/Activity/MINI%20PROJECT%201/Contacts.html" target="_blank">Contacts</a></li>
+                    <img src="sidebar.png" alt="sidebar"/>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav> 
+    </header>
+    <main> 
+        <div class="hero">
+            <h1>Welcome to TropicalHavenQuests.Ph</h1>
+            <p class="tagline">
+              "Unveil the Wonders: Your Gateway to Enchanting Adventures".</p>
+              <!-- <button class="login-button">Log In</button> -->
+              <a href="http://127.0.0.1:5500/Activity/MINI%20PROJECT%201/LogIn.html" class="login-button" target="_blank">Log In</a>
+          </div>
+          <p></p>
+          <p></p>
+          <p></p>
+        <div class="VidImg" style="background-color: #55555540;">  
+          <h2 style="padding: 30px;">Let me take you to a virtual tour!</h2>
+        <div class="video">
+            <iframe
+            width="440"
+            height="350"
+            src="https://www.youtube.com/embed/cnoEqq1oC3M"
+            frameborder="0" allowfullscreen>
+            </iframe>
+            <iframe 
+            width="440" 
+            height="350"  
+            src="https://www.youtube.com/embed/_i0Z2ucwOg8" 
+            frameborder="0" allowfullscreen>
+            </iframe>
+            <iframe
+              width="440"
+              height="350" 
+              src="https://www.youtube.com/embed/9-6tXVudfmI" frameborder="0" allowfullscreen>
+            </iframe>
+          </div>
+          <ul class="featuredphotos">
+            <h2 style="padding: 30px;">"Escaping to paradise found at the Philippines."</h2>
+           <ul>
+              <img id="brt" src="brt.jpg" alt="Banaue Rice Terraces"/>
+              <!-- <p class="banaue">Banaue Rice Terraces</p> -->
+              <img src="chocolate hills.jpg" alt="Chocolate Hills"/>
+              <img src="beach 1.jpg" alt="Beach"/>
+              <img src="beach 2.jpg" alt="Beach"/>
+              <img src="mountain.jpg" alt="Mountain"/>
+              <img src="Surfing.jpg" alt="Surfing"/>
+              <img src="El Nido, Palawan.jpg" alt=""/>
+              <img src="Lake inside Taal volcano.jpg" alt=""/>
+              <p><a href="http://127.0.0.1:5500/Activity/MINI%20PROJECT%201/LogIn.html" class="see-more-button" target="_blank">See more</a>
+              </p>
+          </ul>
+          </div>
+        </div>  
+    </main> 
+    <footer>
+    <div class="footer-content">
+      <p style="font-family: Georgia, 'Times New Roman', Times, serif; color: #ffffff;padding-top: 20px;">&copy; TropicalHavenQuests.Ph 2023 | All rights reserved.</p>
+      <ul class="socials">
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100009378730701" target="_blank"><i class="bx bxl-facebook"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/mhajoyavila/" target="_blank"><i class="bx bxl-instagram"></i></a>
+        </li>
+        <li>
+          <a href="https://www.upwork.com/freelancers/~016906f02a0a6dee24" target="_blank"><i class="bx bxl-upwork"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/mary-joy-avila-85b7a3281/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCB5wBPZ-SzyN90XnwvEg4rg" target="_blank"><i class="bx bxl-youtube"></i></a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </footer>
+  <script>
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navlinks.style.right = "0";
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
